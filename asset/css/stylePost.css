@@ -1,0 +1,63 @@
+.container {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 30px;
+    text-align: center;
+}
+
+h2 {
+    margin: 18px 0;
+    font-size: 30px;
+    line-height: 32px;
+    text-indent: 10px;
+}
+
+h3 {
+    margin-left: 25px;
+    line-height: 20px;
+    text-indent: 10px;
+}
+
+.container__image img {
+    width: 720px;
+    height: 470px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.container__image {
+    width: 100%;
+    text-align: center;
+    margin: 32px;
+}
+
+.container p {
+    margin: 10px 0;
+    text-indent: 25px;
+}
+
+.container ul{
+    margin: 20px 45px;
+}
+
+.container ul li {
+    margin: 8px 0;
+}
+
+.container ul li p {
+    margin: 3px 0;
+}
+
+.container ol  li {
+    margin: 20px;
+}
+
+.container__poem {
+    text-align: center;
+}
