@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/styleContactMe.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./asset/image/logo.png" type="image/x-icon">
+    <title>Contact me</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+    
+        <header>
+            <!-- TODO: Đây là logo -->
+            <div>
+                <a href="./index.html">
+                    <svg width="300" height="50">
+                    <text x="30" y="40" class="header__logo-svg">
+                        Du Lịch Quê Hương Tôi
+                    </text>
+                </svg>
+            </a>
+                
+            </div>
+            <!-- TODO: Đây là thanh menu -->
+            <div class="header__navbar">
+                
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item" >
+                        <a class="header__navbar-link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="header__navbar-item" >
+                        <a class="header__navbar-link" href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="header__navbar-item" >
+                        <a class="header__navbar-link" href="./am-thuc/index.html">ẨM THỰC</a>
+                    </li>
+                    <li class="header__navbar-item" >
+                        <a class="header__navbar-link" href="./dia-danh/index.html">ĐỊA DANH</a>
+                    </li>
+                    <li class="header__navbar-item" >
+                        <a class="header__navbar-link" href="./contact.html" aria-current="page">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- TODO: Main -->
+        <div class="container__info">
+            <div class="container__info-title">
+                <h1>CONTACT ME</h1>
+                <p>Vui lòng liên hệ qua các mạng xã hội hoặc điền form bên dưới và sẽ có người liên lạc với bạn sớm nhất !!!</p>
+            </div>
+            <ul class="container__info-social">
+                <li><a href="https://www.facebook.com/"><i class="container__info-social-icon fa-brands fa-facebook"></i>Facebook</a></li>
+                <li><a href="https://www.instagram.com/"><i class="container__info-social-icon fa-brands fa-instagram"></i>Instagram</a></li>
+                <li><a href="https://mail.google.com/"><i class="container__info-social-icon fa-solid fa-envelope"></i>Email</a></li>
+            </ul>
+        </div>
+        <div class="container__form">
+            <form action="http://tranvanhung.fitstu.net/hufi/thiet-ke-web/form.php" method="post" enctype="multipart/form-data">
+                <div class="container__form-user-detail">
+                    <div class="container__input-box">
+                        <span class="labels">Họ Tên:</span>
+                        <input type="text" placeholder="Enter your name" name="Your name">
+                    </div>
+                    <div class="container__input-box">
+                        <span class="labels">Ngày Sinh:</span>
+                        <input type="date" name="Birthday">
+                    </div>
+                    <div class="container__input-box">
+                        <span class="labels">Số Điện Thoại:</span>
+                        <input type="tel" placeholder="Enter your number" name="Phone number">
+                    </div>
+                    <div class="container__input-box">
+                        <span class="labels">Email:</span>
+                        <input type="email" placeholder="Enter your email" name="Email">
+                    </div>
+                    <div class="container__input-box">
+                        <span class="labels">Lời nhắn:</span>
+                        <textarea name="" id="" cols="50" rows="5" placeholder="Enter your massage" name="Message"></textarea>
+                    </div>
+                </div>
+                <div class="container__submit-btn">
+                    <input type="submit" value="Gửi">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

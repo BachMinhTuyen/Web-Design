@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/styleAboutMe.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-6.3.0-web/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./asset/image/logo.png" type="image/x-icon">
+    <title>About Me</title>
+</head>
+<body>
+    <div class="app">
+        <div class="cover-background"></div>
+        <div class="cover-image"></div>
+
+        <!-- TODO: Đây là logo -->
+        <div class="navbar">
+            <i class="fa-solid fa-bars"></i>
+            <div class="navbar__background"></div>
+            <div class="navbar__logo">
+                <a href="./index.html">
+                    <svg width="300" height="50">
+                        <text x="20" y="37" class="header__logo-svg">
+                            Du Lịch Quê Hương Tôi
+                        </text>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <div style="background-color: #fff;">
+            <div class="container">
+                <!-- TODO: About me (Profile) -->
+                <div class="container__info">
+                    <div class="container__info-avatar">
+                        <img src="./asset/image/Avatar.png" alt="">
+                    </div>
+                    
+                    <div class="container__info-profile">
+                        <ul class="container__info-detail">
+                            <li>Mã Số Sinh Viên:<span> 2001216289</span></li>
+                            <li>Họ Tên:<span> Bạch  Minh Tuyên</span></li>
+                            <li>Lớp:<span> 12DHTH17</span></li>
+                            <li>Học Phần:<span> Thiết Kế Web</span></li>
+                            <li>Ca Học:<span> Chiều Thứ 4</span></li>
+                        </ul>
+
+                        <div class="container__info-contact">
+                            <input type="checkbox" name="" id="check">
+                            <label for="check">Contact Me</label>
+                            
+                            <div class="container__info-social">
+                                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container__content">
+                    <div class="container__content-title">Sở Thích - Đam Mê - Du Lịch</div>
+                    <div class="container__video-card">
+                        
+                        <div class="video-card">
+                            <div class="video-card-body">
+                                <div class="video-thumbnails">
+                                    <img src="./asset/image/aboutme/Tinh_Yeu_Mau_Hong_Lyric.png" alt="" class="thumb-img">
+                                    <video src="./asset/video/Tinh_Yeu_Mau_Hong_Lyric.mov" class="thumb-video"  loop></video>
+                                </div>
+                                <p class="video-card-title">Tình Yêu Màu Hồng - Lofi (Lyric) </p>
+                                <div class="video-card-info">
+                                    <a href="#" class="user"><i class="fa-regular fa-user"></i> Minh Tuyên</a>
+                                    <span class="uploaded-time"><i class="fa-regular fa-clock"></i> 1 ngày trước</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-card-body">
+                                <div class="video-thumbnails">
+                                    <img src="./asset/image/aboutme/beach.png" alt="" class="thumb-img">
+                                    <video src="./asset/video/beach.mp4" class="thumb-video" muted loop></video>
+                                </div>
+                                <p class="video-card-title">A Beautiful Beach With Turquoise Water</p>
+                                <div class="video-card-info">
+                                    <a href="#" class="user"><i class="fa-regular fa-user"></i> Minh Tuyên</a>
+                                    <span class="uploaded-time"><i class="fa-regular fa-clock"></i> 1 ngày trước</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-card-body">
+                                <div class="video-thumbnails">
+                                    <img src="./asset/image/aboutme/bmw_m8gtr.png" alt="" class="thumb-img">
+                                    <video src="./asset/video/bmw_m8gtr.mov" class="thumb-video" muted loop></video>
+                                </div>
+                                <p class="video-card-title">Đam Mê Siêu Xe | BMW M8-GTR</p>
+                                <div class="video-card-info">
+                                    <a href="#" class="user"><i class="fa-regular fa-user"></i> Minh Tuyên</a>
+                                    <span class="uploaded-time"><i class="fa-regular fa-clock"></i> 1 ngày trước</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-card-body">
+                                <div class="video-thumbnails">
+                                    <img src="./asset/image/aboutme/falls.png" alt="" class="thumb-img">
+                                    <video src="./asset/video/falls.mp4" class="thumb-video" muted loop></video>
+                                </div>
+                                <p class="video-card-title">A Waterfalls Cascading Through Multi-layer Of Rocks Formation</p>
+                                <div class="video-card-info">
+                                    <a href="#" class="user"><i class="fa-regular fa-user"></i> Minh Tuyên</a>
+                                    <span class="uploaded-time"><i class="fa-regular fa-clock"></i> 1 ngày trước</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-card-body">
+                                <div class="video-thumbnails">
+                                    <img src="./asset/image/aboutme/Travel_By_Motorbike.png" alt="" class="thumb-img">
+                                    <video src="./asset/video/Traval_By_Motorbike.mov" class="thumb-video" muted loop></video>
+                                </div>
+                                <p class="video-card-title">Đam Mê Phân Khối Lớn | Đi Phượt Một Mình</p>
+                                <div class="video-card-info">
+                                    <a href="#" class="user"><i class="fa-regular fa-user"></i> Minh Tuyên</a>
+                                    <span class="uploaded-time"><i class="fa-regular fa-clock"></i> 1 ngày trước</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        const video_thumbs = document.querySelectorAll(".thumb-video");
+                        video_thumbs.forEach((video_thumb) => {
+                            video_thumb.addEventListener("mouseover", function() {
+                                this.style.opacity = 1;
+                                this.load();
+                                this.play();
+                                this.playbackRate = 1;
+                            });
+                        });
+                        video_thumbs.forEach((video_thumb) => {
+                            video_thumb.addEventListener("mouseleave", function() {
+                                this.style.opacity = 0;
+                                this.pause();
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="container__ads">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

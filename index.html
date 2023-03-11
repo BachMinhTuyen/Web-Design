@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./asset/image/logo.png" type="image/x-icon">
+    <title>Du Lịch Quê Hương Tôi</title>
+</head>
+<body>
+        <div class="app">
+            <header>
+                <!-- TODO: Đây là logo -->
+                <div>
+                    <a href="./index.html">
+                        <svg width="300" height="50">
+                        <text x="30" y="40" class="header__logo-svg">
+                            Du Lịch Quê Hương Tôi
+                        </text>
+                        </svg>
+                    </a>
+                </div>
+                <!-- TODO: Đây là thanh menu -->
+                <div class="header__navbar">
+                    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item" >
+                            <a class="header__navbar-link" href="./index.html" aria-current="page">HOME</a>
+                        </li>
+                        <li class="header__navbar-item" >
+                            <a class="header__navbar-link" href="./about.html">ABOUT</a>
+                        </li>
+                        <li class="header__navbar-item" >
+                            <a class="header__navbar-link" href="./am-thuc/index.html">ẨM THỰC</a>
+                        </li>
+                        <li class="header__navbar-item" >
+                            <a class="header__navbar-link" href="./dia-danh/index.html">ĐỊA DANH</a>
+                        </li>
+                        <li class="header__navbar-item" >
+                            <a class="header__navbar-link" href="./contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+    
+            <!-- TODO: Đây là banner -->
+            <div class="banner">
+                <div class="sliderr">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+        
+                        <div class="slide first">
+                            <img src="./asset/image/banner/Vuon-Quoc-Gia-Cat-Tien.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./asset/image/banner/khu-du-lich-buu-long.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./asset/image/banner/khu-du-lich-thac-giang-dien.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./asset/image/banner/khuon-vien-van-mieu-tran-bien-bien-hoa.png" alt="">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 4) {
+                        counter = 1;
+                    }
+                }, 6000);
+            </script>
+    
+            <!-- TODO: Đây là những nội dung chính -->
+            <!-- **Phụ thuộc vào các trang cụ thể -->
+            <div class="container">
+                
+                <!-- !!Chủ đề Địa Danh -->
+                <div class="container__topic">
+
+                    <ul class="container__topic-title">
+                        <li>
+                            <h1><i style="color: blue;" class="fa-solid fa-location-dot"></i> Những Địa Điểm Du Lịch</h1>
+                        </li>
+                        <a href="./dia-danh/index.html">Xem tất cả >>></a>
+                    </ul>
+
+                    <div class="container__items-list">
+                        <!-- ??Bài số 1 -->
+                        <div class="container__item">
+
+                            <div class="container__item-title">
+                                <h2>Vườn Quốc Gia Cát Tiên</h2>
+                            </div>
+
+                            <div class="container__item-content">
+                                <div class="container__item-content-one">
+                                    <a href="./dia-danh/vuon-quoc-gia-cat-tien.html">
+                                        <img src="./asset/image/dia-danh/vuon-quoc-gia-cat-tien/cong-chao-mung-khach-du-lich.jpg" alt="">
+                                    </a>
+                                </div>
+                                
+    
+                                <hr>
+    
+                                <div class="container__item-content-two">
+                                    <div class="container__item-one">
+                                        <p><b>Vườn Quốc gia Cát Tiên</b> (hay còn được biết là Khu du lịch Nam Cát Tiên) là một vùng đất xanh mướt với hệ thống động thực vật vô cùng đa dạng. Nơi đây được UNESCO công nhận là “Khu dự trữ sinh quyển thế giới” với hàng trăm loài động vật quý hiếm ghi tên vào Sách Đỏ Việt Nam.</p>
+                                    </div>
+                                    <div class="container__item-second">
+                                        <p>Nam Cát Tiên còn được biết đến như “lá phổi xanh” của vùng Đông Nam Bộ và là ngôi nhà chung của hàng trăm loài động thực vật hiếm có.</p>
+                                        <div>
+                                            <a class="container__item-more" href="./dia-danh/vuon-quoc-gia-cat-tien.html" >Chi tiết...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ??Bài số 2 -->
+                        <div class="container__item">
+
+                            <div class="container__item-title">
+                                <h2>Khu Du Lịch Bửu Long</h2>
+                            </div>
+
+                            <div class="container__item-content">
+                                <div class="container__item-content-one">
+                                    <a href="./dia-danh/khu-du-lich-buu-long.html">
+                                        <img src="./asset/image/dia-danh/khu-du-lich-buu-long/check-in-tai-khu-du-lich-buu-long.png" alt="">
+                                    </a>
+                                </div>
+                                
+    
+                                <hr>
+    
+                                <div class="container__item-content-two">
+                                    <div class="container__item-one">
+                                        <p><b>Khu du lịch Bửu Long</b>  là một điểm du lịch sinh thái hấp dẫn gần Sài Gòn. Địa điểm này rất lý tưởng để tổ chức các buổi picnic, dã ngoại với cảnh đẹp thiên nhiên và nhiều hoạt động hấp dẫn.</p>
+                                    </div>
+                                    <div class="container__item-second">
+                                        <p>Nằm ở phía Tây Bắc Biên Hòa và phía Đông Thành phố Hồ Chí Minh, khu du lịch sinh thái Bửu Long là điểm đến lý tưởng được nhiều gia đình và nhóm bạn lựa chọn.</p>
+                                        <div>
+                                            <a class="container__item-more" href="./dia-danh/khu-du-lich-buu-long.html" >Chi tiết...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ??Bài số 3 -->
+                        <div class="container__item">
+
+                            <div class="container__item-title">
+                                <h2>Thác Giang Điền</h2>
+                            </div>
+
+                            <div class="container__item-content">
+                                <div class="container__item-content-one">
+                                    <a href="./dia-danh/thac-giang-dien.html">
+                                        <img src="./asset/image/dia-danh/thac-giang-dien/thac-giang-dien.jpg" alt="">
+                                    </a>
+                                </div>
+                                
+    
+                                <hr>
+    
+                                <div class="container__item-content-two">
+                                    <div class="container__item-one">
+                                        <p><b>Thác Giang Điền</b> có diện tích lên tới 67 ha và được thiết kế thành nhiều công trình, tiểu cảnh xinh đẹp thu hút du khách hàng năm. Đặc biệt, nơi đây còn gắn liền với truyền thuyết tình yêu bất diệt của lứa đôi.</p>
+                                    </div>
+                                    <div class="container__item-second">
+                                        <p>Thác Giang Điền được hình thành bởi ba dòng thác: thác Chàng, thác Nàng và chính dòng thác.</p>
+                                        <div>
+                                            <a class="container__item-more" href="./dia-danh/thac-giang-dien.html" >Chi tiết...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ??Bài số 4 -->
+                        <div class="container__item">
+
+                            <div class="container__item-title">
+                                <h2>Văn miếu Trấn Biên</h2>
+                            </div>
+
+                            <div class="container__item-content">
+                                <div class="container__item-content-one">
+                                    <a href="./dia-danh/van-mieu-tran-bien.html">
+                                        <img src="./asset/image/dia-danh/van-mieu-tran-bien/gian-trung-tam-tho-chu-tich-hcm.jfif" alt="">
+                                    </a>
+                                </div>
+                                
+    
+                                <hr>
+    
+                                <div class="container__item-content-two">
+                                    <div class="container__item-one">
+                                        <p><b>Văn miếu Trấn Biên</b> được coi là “Quốc Tử Giám” ở miền Đông. Đây là nơi thờ phụng các danh nhân văn hóa tiêu biểu của đất nước và là biểu trưng cho truyền thống học tập, hào khí và văn hóa của người Việt ở phương Nam.</p>
+                                    </div>
+                                    <div class="container__item-second">
+                                        <p>Là sự tiếp nối truyền thống của Văn Miếu - Quốc Tử Giám ở Thăng Long (Văn miếu đầu tiên của nước ta, xây dựng từ năm 1070) và là biểu tượng cho tinh thần hiếu học - trọng người tài.</p>
+                                        <div>
+                                            <a class="container__item-more" href="./dia-danh/van-mieu-tran-bien.html" >Chi tiết...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- !!Chủ đề Ẩm Thực -->
+                <div class="container__topic">
+
+                    <ul class="container__topic-title">
+                        <li>
+                            <h1><i style="color: blue;" class="fa-solid fa-location-dot"></i> Những Món Ăn Đặc Sản Nơi Đây</h1>
+                        </li>
+                        <a href="./am-thuc/index.html">Xem tất cả >>></a>
+                    </ul>
+
+                    <div class="container__items-list">
+                        <!-- ??Bài số 1 -->
+                        <div class="container__item">
+
+                            <div class="container__item-title">
+                                <h2>Gỏi bưởi Tân Triều</h2>
+                            </div>
+
+                            <div class="container__item-content">
+                                <div class="container__item-content-one">
+                                    <a href="./am-thuc/goi-buoi-Tan-Trieu.html">
+                                        <img src="./asset/image/am-thuc/Goi-Buoi-Tan-Trieu/goi-buoi-tan-trieu-dong-nai.jpg" alt="">
+                                    </a>
+                                </div>
+                                
+    
+                                <hr>
+    
+                                <div class="container__item-content-two">
+                                    <div class="container__item-one">
+                                        <p><b>Bưởi Tân Triều</b> có nhiều loại với các tên gọi khác nhau như bưởi thanh, bưởi xiêm, bưởi chua, bưởi đường, bưởi ổi, bưởi long… Mỗi loại bưởi tượng trưng cho độ ngon ngọt khác nhau.</p>
+                                    </div>
+                                    <div class="container__item-second">
+                                        <p>Bưởi chọn để làm gỏi phải là bưởi đường còn xanh, chín cây. Cách phân biệt bưởi chín cây với bưởi xanh là nhìn qua các mụn the ngoài vỏ, trái nào nở hết mới là trái già.</p>
+                                        <div>
+                                            <a class="container__item-more" href="./am-thuc/goi-buoi-Tan-Trieu.html" >Chi tiết...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ??Bài số 2 -->
+                        <div class="container__item">
+
+                            <div class="container__item-title">
+                                <h2>Gà nướng - Xôi chiên phồng</h2>
+                            </div>
+
+                            <div class="container__item-content">
+                                <div class="container__item-content-one">
+                                    <a href="./am-thuc/ga-nuong-xoi-chien-phong-dong-nai.html.html">
+                                        <img src="./asset/image/am-thuc/Ga-Nuong-Xoi-Chien-Phong/ga-nuong-xoi-chien-phong-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                
+    
+                                <hr>
+    
+                                <div class="container__item-content-two">
+                                    <div class="container__item-one">
+                                        <p><b>Gà nướng - Xôi chiên phồng</b> Xôi chiên phồng căng tròn như quả bóng, cắn miếng giòn rụm, vẫn giữ được độ dẻo của nếp, vị ngọt nhẹ của đường, ăn cùng gà nướng mật ong dậy mùi ưng lắm.</p>
+                                    </div>
+                                    <div class="container__item-second">
+                                        <p>Tuy không phải là món cổ truyền nhưng xôi chiên phồng đã trở nên phổ biến khắp Nam ngoài Bắc.</p>
+                                        <div>
+                                            <a class="container__item-more" href="./am-thuc/ga-nuong-xoi-chien-phong-dong-nai.html.html" >Chi tiết...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ??Bài số 3 -->
+                        <div class="container__item">
+
+                            <div class="container__item-title">
+                                <h2>Canh Chua Lá Giang</h2>
+                            </div>
+
+                            <div class="container__item-content">
+                                <div class="container__item-content-one">
+                                    <a href="./am-thuc/canh-chua-la-giang.html">
+                                        <img src="./asset/image/am-thuc/Canh-Chua-La-Giang/noi-canh-chua-la-giang.jpg" alt="">
+                                    </a>
+                                </div>
+                                
+    
+                                <hr>
+    
+                                <div class="container__item-content-two">
+                                    <div class="container__item-one">
+                                        <p><b>Canh chua lá giang</b> là một món canh cực ngon của người Đồng Nai. Món ăn có vị chua, thanh mát và dễ chịu, giải nhiệt cho mùa hè được nhiều người yêu thích. Món ăn cực kỳ phù hợp với mùa hè.</p>
+                                    </div>
+                                    <div class="container__item-second">
+                                        <q>Khi thời tiết nắng nóng oi bục, về nhà mà có bát canh chua thì thật tuyệt. Món ăn được ăn thêm với muối ớt rừng cho tăng thêm độ cay nồng.</q>
+                                        <div>
+                                            <a class="container__item-more" href="./am-thuc/canh-chua-la-giang.html" >Chi tiết...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ??Bài số 4 -->
+                        <div class="container__item">
+
+                            <div class="container__item-title">
+                                <h2>Mít Tố Nữ - Long Khánh</h2>
+                            </div>
+
+                            <div class="container__item-content">
+                                <div class="container__item-content-one">
+                                    <a href="./am-thuc/mit-to-nu-long-khanh.html">
+                                        <img src="./asset/image/am-thuc/Mit-To-Nu/mit-to-nu-long-khanh.jpg" alt="">
+                                    </a>
+                                </div>
+                                
+    
+                                <hr>
+    
+                                <div class="container__item-content-two">
+                                    <div class="container__item-one">
+                                        <p><b>Mít Tố Nữ</b> là loại trái cây được thiên nhiên ưu đãi, nơi đây (Long Khánh) một khí hậu thuận hòa cho cây cối đơm hoa kết trái mà không phải âu lo bị lũ lụt, bão tố tàn phá như ở miền Trung, miền Bắc hoặc như ở mấy tỉnh đồng bằng sông nước miền Tây.</p>
+                                    </div>
+                                    <div class="container__item-second">
+                                        <p>Mít Tố Nữ nổi tiếng gần xa, ai cũng biết đến chuyện tình ngang trái của chàng trai, cô gái nghèo yêu nhau ...</p>
+                                        <div>
+                                            <a class="container__item-more" href="./am-thuc/mit-to-nu-long-khanh.html" >Chi tiết...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    
+            <!-- TODO: Đây là footer -->
+            <footer>
+                <div class="footer__info">
+                    <ul class="footer__info-list">
+                        <li>Mã Số Sinh Viên:<span> 2001216289</span></li>
+                        <li>Họ Tên:<span> Bạch Minh Tuyên</span></li>
+                        <li>Lớp:<span> 12DHTH17</span></li>
+                        <li>Học Phần:<span> Thiết Kế Web</span></li>
+                        <li>Ca Học:<span> Chiều Thứ 4</span></li>
+                    </ul>
+                    <ul class="footer__info-social">
+                        <li><a href="https://www.facebook.com/"><i class="footer__info-social-icon fa-brands fa-facebook"></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/"><i class="footer__info-social-icon fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li><a href="https://github.com/"><i class="footer__info-social-icon fa-brands fa-github"></i>GitHub</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+</body>
+</html>
