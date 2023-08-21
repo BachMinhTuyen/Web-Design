@@ -1,0 +1,109 @@
+.header {
+  background-color: #0c0c36;
+}
+main {
+  background-image: linear-gradient(45deg, #0b116a, #4a0547);
+  font-family: var(--font-family-myriadPro);
+}
+.general-container {
+  width: 100%;
+  margin-top: 95px;
+  color: #ffffff;
+}
+.project {
+  width: 100%;
+}
+.project-info {
+  /* width: 50%; */
+  margin-left: 10px;
+  padding: 20px 0;
+  text-align: justify;
+  font-size: 1.8rem;
+}
+
+.project-info h2 {
+  color: #fff;
+}
+
+.project-image {
+  max-width: 600px;
+  margin: auto;
+  object-fit: cover;
+}
+.big-title h1 {
+  font-size: 3.4rem;
+  text-align: center;
+  border-bottom: 2px solid rgb(237, 235, 235);
+}
+.general-container .title {
+  margin-top: 20px;
+  color: #333;
+  text-align: center;
+  background-color: rgb(210, 206, 206);
+}
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.card {
+  background-color: rgb(35, 6, 52);
+  box-shadow: 0 0 2px;
+  height: 350px;
+  min-width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 20px;
+  transition: all 0.5s ease;
+}
+
+.card h2 {
+  font-size: 2.2rem;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgba(230, 221, 221, 0.769);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 25px auto;
+}
+.card p {
+  margin: 5px;
+}
+.card button {
+  width: 110px;
+  height: 40px;
+
+  font-size: medium;
+  margin: 0 auto;
+}
+.card:hover {
+  background-color: rgb(1, 1, 1);
+  color: white;
+}
+.card:hover h2 {
+  scale: 1.2;
+}
+
+@media (min-width: 575px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 862px) {
+  .member {
+    margin: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

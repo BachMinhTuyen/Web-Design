@@ -1,0 +1,317 @@
+/*-----------------------------------*\
+  #UPCOMING
+\*-----------------------------------*/
+.upcoming {
+  background-image: linear-gradient(34deg, #0e0560, #420550);
+  /* background-image: url("https://picstatio.com/large/1733b9/sunset-motorcyle-illustraiton-art.jpg"); */
+  background-size: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  width: 100vw;
+  padding-bottom: 200px;
+}
+.header {
+  background-color: var(--bg-oxford-blue);
+}
+.banner {
+  margin-top: 71px;
+  width: 100%;
+}
+.splide__wrapper {
+  height: 100%;
+}
+
+.splide__slide .img_box {
+  width: 100%;
+  height: 100%;
+}
+.splide__slide .img_box img {
+  width: inherit;
+  height: inherit;
+}
+.all {
+  margin-top: 20px;
+}
+
+.sec__header {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.sec__header::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #a09fa4;
+}
+.sec__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  position: sticky;
+}
+
+.sec__header .sec__title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  position: relative;
+  color: var(--text-color1);
+}
+
+.sec__header .sec__title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -16px;
+  width: 30%;
+  height: 5px;
+  border-radius: 999px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#a2eea4),
+    to(var(--primary-color))
+  );
+  background-image: -o-linear-gradient(#a2eea4, var(--primary-color));
+  background-image: linear-gradient(#a2eea4, var(--primary-color));
+}
+
+.sec__list .sec__item + .sec__item {
+  margin-left: 10px;
+}
+
+.sec__list .sec__item {
+  background-image: none;
+  -webkit-clip-path: var(--clip-path-10);
+  clip-path: var(--clip-path-10);
+  border: #3c67e3 2px solid;
+}
+.sec__list .sec__item.active {
+  position: relative;
+  background-image: var(--gradient-1);
+  color: var(--text-white);
+  font-size: var(--fontSize-6);
+  font-weight: var(--weight-semiBold);
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  min-width: 120px;
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-clip-path: var(--clip-path-10);
+  clip-path: var(--clip-path-10);
+  overflow: hidden;
+}
+.product {
+  margin-top: 40px;
+}
+
+.product__list {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 40px;
+  -ms-grid-columns: 250px;
+  grid-template-columns: 250px;
+  place-content: center;
+}
+.product__item {
+  height: 350px;
+  width: 250px;
+  padding: 4px;
+  position: relative;
+  border-radius: 6px;
+  font-size: 1.5em;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.product__item:hover {
+  box-shadow: 0px 5px 15px 8px rgba(36, 34, 36, 0.995);
+}
+.product__item a {
+  width: 100%;
+}
+
+.product__item .product__item-content {
+  height: 100%;
+  width: 100%;
+  background: #191c29;
+  padding: 5px;
+  position: relative;
+  border-radius: 6px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  z-index: 1;
+  font-family: var(--fontFamily-oxanium);
+}
+.product__item .product__item-content .product__item-bg {
+  margin-top: 30px;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.product__item .product__item-content .product__item-bg img {
+  scale: 1.15;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: scale 0.4s ease;
+  -o-transition: scale 0.4s ease;
+  transition: scale 0.4s ease;
+}
+.product__item .product__item-content .product__item-bg:hover img {
+  scale: 1.3;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.product__item .product__item-content .product__item-bg:hover ~ .name-item a,
+.product__item .product__item-content .name-item:hover a {
+  color: var(--primary-color);
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.product__item .product__item-content a {
+  font-size: 1.8rem;
+  color: #e4dddd;
+}
+
+.product__item .product__item-content .price-item {
+  font-size: 1.8rem;
+  color: #e4dddd;
+}
+.product__item:hover {
+  color: rgb(88 199 250 / 100%);
+  -webkit-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
+}
+
+
+.product__item::before {
+  content: "";
+  width: 102%;
+  height: 101%;
+  border-radius: 8px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--rotate)),
+    color-stop(#5ddcff),
+    color-stop(43%, #3c67e3),
+    to(#4e00c2)
+  );
+  background-image: -o-linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  position: absolute;
+  z-index: 0;
+  top: -0.5%;
+  left: -1%;
+  -webkit-animation: spin 2.5s linear infinite;
+  animation: spin 2.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+
+  100% {
+    --rotate: 360deg;
+  }
+}
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.product__list.show-item {
+  display: -ms-grid;
+  display: grid;
+  -webkit-animation: fadeIn 1s cubic-bezier(0.42, 0, 0.01, 0.85);
+  animation: fadeIn 1s cubic-bezier(0.42, 0, 0.01, 0.85);
+}
+
+
+@media (min-width: 575px) {
+  .banner {
+    margin-top: 94px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product__list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .sec__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .sec__list {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: unset;
+    justify-content: unset;
+  }
+}
+
+@media (min-width: 992px) {
+}

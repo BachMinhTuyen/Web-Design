@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+  --body-color: #0f0a06;
+  --white-color: #fff;
+  --container-color: #1a1a1a96;
+  --light-bacco: rgba(73, 148, 223, 0.912);
+  --yellow-light: #ffed00;
+
+  /* font sizes */
+  --h2-font-size: 2em;
+  --small-font-size: 1em;
+  --medium-font-size: 1.2em;
+  --smaller-font-size: 0.9em;
+}
+
+#signUp-modal,
+#signIn-modal {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  background-color: #0000006c;
+  /* display: none; */
+}
+#signUp-modal.active,
+#signIn-modal.active {
+  display: block;
+}
+.login-container {
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  width: 400px;
+  padding: 30px 0 20px;
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  color: var(--white-color);
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+#signIn-modal .input-check:checked ~ h2,
+#signUp-modal .input-check:checked ~ h2 {
+  color: var(--light-bacco);
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input-box {
+  position: relative;
+  width: 310px;
+  margin: 30px 0;
+}
+
+.input-box .input-line {
+  position: absolute;
+  width: 100%;
+  bottom: -2px;
+  left: 0;
+  height: 2.5px;
+  background: var(--white-color);
+  transition: 0.5s ease;
+}
+
+#signIn-modal .input-check:checked ~ .input-box .input-line,
+#signUp-modal .input-check:checked ~ .input-box .input-line {
+  background: var(--light-bacco);
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: var(--small-font-size);
+  pointer-events: none;
+
+  color: var(--white-color);
+  transition: 0.5s ease;
+}
+
+#signIn-modal .input-box input:focus ~ label,
+#signIn-modal .input-box input:valid ~ label,
+#signUp-modal .input-box input:focus ~ label,
+#signUp-modal .input-box input:valid ~ label {
+  top: -5px;
+}
+
+#signIn-modal .input-check:checked ~ .input-box label,
+#signUp-modal .input-check:checked ~ .input-box label {
+  color: var(--light-bacco);
+  text-shadow: 0 0 10px var(--light-bacco);
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+  padding: 0 35px 0 5px;
+  transition: 0.5s ease;
+}
+
+#signIn-modal .input-check:checked ~ .input-box input,
+#signUp-modal .input-check:checked ~ .input-box input {
+  color: var(--light-bacco);
+  text-shadow: 0 0 5px var(--light-bacco);
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  color: var(--white-color);
+  font-size: var(--medium-font-size);
+  line-height: 57px;
+  transition: 0.5s;
+}
+
+#signIn-modal .input-check:checked ~ .input-box .icon,
+#signUp-modal .input-check:checked ~ .input-box .icon {
+  color: var(--light-bacco);
+  filter: drop-shadow(0 0 5px --light-bacco);
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white-color);
+  font-size: var(--smaller-font-size);
+  margin: -20px 0 20px;
+  transition: 0.5s ease;
+}
+
+#signIn-modal .input-check:checked ~ .remember-forgot,
+#signUp-modal .input-check:checked ~ .remember-forgot {
+  color: var(--light-bacco);
+  text-shadow: 0 0 10px var(--light-bacco);
+}
+
+.remember-forgot label input {
+  accent-color: var(--white-color);
+  margin-right: 3px;
+  transition: 0.5s ease;
+  width: max-content;
+  display: inline-block;
+}
+
+#signIn-modal .input-check:checked ~ .remember-forgot label input,
+#signUp-modal .input-check:checked ~ .remember-forgot label input {
+  accent-color: var(--light-bacco);
+}
+
+.remember-forgot a {
+  color: var(--white-color);
+  text-decoration: none;
+  transform: color 0.5s ease;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+#signIn-modal .input-check:checked ~ .remember-forgot a,
+#signUp-modal .input-check:checked ~ .remember-forgot a {
+  color: var(--light-bacco);
+}
+
+.login button {
+  width: 100%;
+  height: 44px;
+  background: var(--white-color);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: var(--small-font-size);
+  color: var(--body-color);
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+
+#signIn-modal .input-check:checked ~ button,
+#signUp-modal .input-check:checked ~ button {
+  background-image: var(--gradient-1);
+  box-shadow: 0 0 15px var(--light-bacco);
+}
+
+.register-link {
+  color: var(--white-color);
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  margin: 25px 0 10px;
+  transition: 0.5s ease;
+}
+
+#signIn-modal .input-check:checked ~ .register-link,
+#signUp-modal .input-check:checked ~ .register-link {
+  color: var(--light-bacco);
+  text-shadow: 0 0 10px var(--light-bacco);
+}
+
+.register-link p a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 550;
+  transition: 0.5s ease;
+}
+
+#signIn-modal .input-check:checked ~ .register-link p a,
+#signUp-modal .input-check:checked ~ .register-link p a {
+  color: var(--light-bacco);
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.login-light {
+  position: absolute;
+  top: -123px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 10px;
+  background: var(--light-bacco);
+  border-radius: 20px;
+}
+.login-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.login-close i {
+  color: var(--light-bacco);
+
+  padding: 18px;
+  border-radius: 10px;
+}
+.login-light::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 950px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3)-50%,
+    rgba(255, 255, 255, 0) 90%
+  );
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+
+#signIn-modal .input-check:checked ~ .login-light::before,
+#signUp-modal .input-check:checked ~ .login-light::before {
+  opacity: 1;
+}
+
+.toggle {
+  position: absolute;
+  top: 20px;
+  width: 60px;
+  height: 120px;
+  background: #1f1f1f;
+  right: -70px;
+  border-radius: 10px;
+  display: none;
+}
+
+.toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 80%;
+  background: var(--body-color);
+}
+
+.toggle::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 45px;
+  height: 45px;
+  background: #333;
+  border: 2px solid var(--container-color);
+  border-radius: 10px;
+  cursor: [pointer];
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease;
+}
+
+#signIn-modal .input-check:checked ~ .toggle::after,
+#signUp-modal .input-check:checked ~ .toggle::after {
+  top: 65px;
+}
+
+.input-check {
+  position: absolute;
+  right: -70px;
+  z-index: 1;
+  display: none;
+}
+
+.toggle .text {
+  position: absolute;
+  top: 17px;
+  left: 50%;
+  transform: translate(-50%);
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  z-index: 1;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.toggle .text.off {
+  opacity: 1;
+}
+
+.input-check:checked ~ .toggle .text.off {
+  top: 76px;
+  opacity: 0;
+}
+
+.toggle .text.on {
+  opacity: 0;
+}
+
+.input-check:checked ~ .toggle .text.on {
+  top: 76px;
+  opacity: 1;
+  color: var(--light-bacco);
+  text-shadow: 0 0 15px var(--light-bacco), 0 0 30px var(--light-bacco),
+    0 0 45px var(--light-bacco), 0 0 60px var(--light-bacco);
+}
+/* modal success*/
+.success-modal {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  background-color: #0000006c;
+  display: block;
+}
+.card-success {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0px 2px 10px 5px rgba(1, 1, 1, 0.479);
+  width: 250px;
+  height: 180px;
+  padding: 0 0 30px;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-modal .success-close {
+  font-size: 2rem;
+  color: #0d150e;
+  margin-left: auto;
+}
+.success-modal .success-close i {
+  display: inline-block;
+  padding: 10px;
+  font-size: 2rem;
+  color: #0d150e;
+  margin-left: auto;
+}
+.success-modal .success-close:hover i {
+  color: #8637f5;
+}
+.success-modal .success-icon i {
+  font-size: 4rem;
+  color: #07be16;
+}
+.success-modal .success-title {
+  margin-top: 18px;
+  font-size: 2.6rem;
+  color: var(--text-black);
+  font-weight: 600;
+  font-family: var(--font-family-myriadPro);
+}
+@media (min-width: 575px) {
+}
+
+@media (min-width: 768px) {
+  .toggle {
+    display: block;
+  }
+  .login-close {
+    position: absolute;
+    background-color: #1f1f1f;
+    top: 150px;
+    right: -70px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: inset 2px 0px 10px rgba(90, 90, 90, 0.566);
+  }
+  .login-close:hover i {
+    cursor: pointer;
+    color: var(--light-bacco);
+    background-color: #1f1f1f;
+    box-shadow: inset 2px 0px 10px rgba(183, 173, 173, 0.566);
+  }
+  .login-close i {
+    color: var(--light-bacco);
+    background-color: #3f3f3f;
+    padding: 18px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+}

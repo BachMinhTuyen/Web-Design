@@ -1,0 +1,202 @@
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+.hero {
+  background-image: url("https://wallpapers.com/images/hd4/white-motorcycle-in-bluish-purple-background-ypppczndbab7r1d5.jpg");
+  background-size: inherit;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: var(--fontFamily-oxanium);
+  text-align: center;
+  -webkit-padding-before: 170px;
+  padding-block-start: 170px;
+}
+
+.hero .section-subtitle {
+  letter-spacing: 5px;
+}
+
+.hero-title {
+  margin-block: 20px 25px;
+}
+
+.hero .btn {
+  margin-inline: auto;
+}
+
+.hero::before {
+  background-image: var(--gradient-2);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 1;
+}
+
+.news {
+  background-image: linear-gradient(#1a113f, #071650, #26355f);
+  padding-bottom: 200px;
+}
+.news .splide__wrapper {
+  padding: 50px 15px;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.news .splide__slide {
+  height: max-content !important;
+}
+
+.news .splide .img_box img {
+  width: 100%;
+}
+.news .splide__pagination {
+  bottom: -4.2rem;
+  display: none;
+}
+
+.news .sale-info {
+  padding: 2rem 2rem;
+  height: 90px;
+  font-weight: 500;
+  background-color: var(--bg-oxford-blue-alpha-80);
+}
+
+.news .sale-info .sale-title {
+  color: var(--text-white);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.news .sale-info .sale-title:hover {
+  color: var(--text-purple);
+}
+.news .splide .splide__arrow {
+  background-color: var(--bg-purple);
+}
+.dichvu {
+  background-image: linear-gradient(#6a195e, #071650, #1a113f);
+}
+.dichvu .dichvu-item {
+  font-family: var(--font-family-myriadPro);
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dichvu .dichvu-item:first-child {
+  position: relative;
+}
+.dichvu .dichvu-item:last-child .item-img {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+.dichvu .dichvu-item:last-child .item-txt {
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+  padding-top: 6em;
+}
+.dichvu .item-img {
+  height: 100%;
+}
+
+.dichvu .item-img img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dichvu .dichvu-item .item-txt {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.dichvu .dichvu-item .item-txt .btn {
+  margin-bottom: 20px;
+}
+.dichvu .item__txt__inner {
+  text-align: left;
+}
+
+.section__tt {
+  color: var(--text-purple);
+  text-align: left;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Myriad Pro Semibold", arial, sans-serif;
+  font-size: 2.4rem;
+}
+.dichvu .dichvu-item .desc {
+  font-size: 1.54rem;
+  text-align: justify;
+  margin: 2rem 0;
+}
+
+@media (min-width: 575px) {
+  .contact .container {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .product__list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .hero .section-subtitle {
+    letter-spacing: 10px;
+  }
+
+  .news-list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .news-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .news .splide__pagination {
+    display: flex;
+  }
+
+  .dichvu .item-img {
+    height: 585px;
+  }
+  .dichvu .item-img img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+  }
+  .dichvu .dichvu-item:nth-child(n + 2) {
+    margin-top: -100px;
+  }
+  .dichvu .dichvu-item .item-txt {
+    padding: 0 40px;
+  }
+}

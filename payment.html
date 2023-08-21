@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--primary meta tags-->
+    <title>Unigine - Thanh Toán</title>
+    <meta name="title" content="Unigine - tốc độ vượt rội!" />
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--custom css link-->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/admin.css" />
+    <link rel="stylesheet" href="./assets/css/payment.css" />
+  </head>
+  <body>
+    <!--#HEADER-->
+    <header class="header active" data-header>
+      <div class="container">
+        <a href="./admin.html" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="110"
+            height="53"
+            alt="unigine home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./admin.html" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="./product-admin.html" class="navbar-link" data-nav-link
+                >SẢN PHẨM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="#!" class="navbar-link" id="service" data-nav-link
+                >DỊCH VỤ<i class="arrow-down-icon fa-solid fa-arrow-down"></i>
+              </a>
+
+              <ul class="service">
+                <li class="service-item">đặt lịch lái thử</li>
+                <li class="service-item">đặt lịch bảo dưỡng</li>
+                <li class="service-item">linh kiện chính hẵng</li>
+                <li class="service-item">vệ sinh và chăm sóc</li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="./reviews-admin.html" class="navbar-link" data-nav-link
+                >VỀ CHÚNG TÔI
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-users">
+          <div class="header__user">
+            <a href="" class="header__user-info">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <div class="header__user--show header__box-show">
+              <ul class="header__user-list list">
+                <li
+                  class="header__user-item border-top border-bottom list-item--hover"
+                >
+                  <a href="" class="header__user-item-link">
+                    Tài khoản của tôi
+                  </a>
+                </li>
+                
+                <li class="header__user-item list-item--hover">
+                  <a href="./index.html" class="header__user-item-link">
+                    Đăng xuất
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__cart">
+            <div class="header__cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div class="header__cart-badge">3</div>
+            </div>
+
+            <!--  no cart class: header__cart-show--no-cart -->
+            <div class="header__cart--show header__box-show">
+              <div class="no-cart">
+                <div class="no-cart-img"></div>
+                <span class="no-cart-text">Không có sản phẩm nào</span>
+              </div>
+              <div class="header-heading-text">
+                <h3>Danh sách sản phầm</h3>
+              </div>
+              <ul class="header__cart-list list">
+                <li class="header__cart-item list-item list-item--hover">
+                  <a href="" class="header__cart-link">
+                    <img
+                      loading="lazy"
+                      src="https://phattien.com/wp-content/uploads/2022/12/vario-the-thao-xam-den-bac1-e1672364326339-550x400.png"
+                      alt=""
+                      class="header__cart-img"
+                    />
+                    <div class="header__cart-info">
+                      <div class="header__cart-info-name">Honda VARIO 160</div>
+
+                      <div class="price_value">56490000₫</div>
+                    </div>
+                  </a>
+                </li>
+
+                <button class="header__cart-btn btn clip-path-10 bg-btn">
+                  <a href="./carts.html">Xem giỏ hàng</a>
+                </button>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle menu"
+          data-nav-toggler
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="general-container">
+        <section class="container-form">
+          <form action="">
+            <div class="form-title">Thông tin thanh toán</div>
+            <div class="form-warning">
+              Bạn đã có tài khoản?
+              <a class="signIn" href="#!">Đăng nhập</a>
+            </div>
+
+            <div class="form-input">
+              <label>Họ và tên</label>
+              <input id="customer_name" type="text" placeholder="VD: Nguyễn Văn A" required />
+            </div>
+            <div class="form-contact">
+              <div class="form-input">
+                <label>Email</label>
+                <input id="customer_email" type="email" placeholder="email@example.com" required />
+              </div>
+              <div class="form-input">
+                <label>Điện thoại</label>
+                <input
+                  type="tel"
+                  name=""
+                  id="phone"
+                  placeholder="0123 456789"
+                  required
+                />
+              </div>
+            </div>
+            <div class="method">
+              <div class="delivery-method">
+                <input
+                  type="radio"
+                  class="input-radio"
+                  name="delivery"
+                  id="delivery-1"
+                  checked
+                />
+                <label for="delivery-1">Giao hàng</label>
+              </div>
+
+              <div class="delivery">
+                <input type="text" placeholder="Địa chỉ" />
+                <div class="address">
+                  <div class="address-select">
+                    <label>Tỉnh</label>
+                    <select name="" id="provinceSelect">
+                      <option value="null">Chọn tỉnh thành</option>
+                    </select>
+                  </div>
+                  <div class="address-select">
+                    <label>Quận/Huyện</label>
+                    <select name="" id="districtsSelect">
+                      <option value="null">Chọn Quận/Huyện</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="delivery-method">
+                <input
+                  type="radio"
+                  class="input-radio"
+                  name="delivery"
+                  id="delivery-2"
+                  value="Nhận tại cửa hàng"
+                />
+                <label for="delivery-2">Nhận tại cửa hàng</label>
+              </div>
+              <div class="delivery">
+                <div class="receive address">
+                  <div class="address-select">
+                    <label>Tỉnh</label>
+                    <select name="" id="showroomProvinces">
+                      <option value="null">Chọn tỉnh thành</option>
+                      <option value="79">Thành phố Hồ Chí Minh</option>
+                    </select>
+                  </div>
+                  <div class="address-select">
+                    <label>Quận/Huyện</label>
+                    <select name="" id="showroomDistrict">
+                      <option value="null">Chọn Quận/Huyện</option>
+                      <option value="764">Quận Gò Vấp</option>
+                      <option value="761">Quận 12</option>
+                      <option value="769">Thành phố Thủ Đức</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="showroom">
+              <div>Chi nhánh còn hàng</div>
+
+              <div class="location">
+                <div class="delivery-method">
+                  <input
+                    type="radio"
+                    class="input-radio"
+                    name="chiNhanh"
+                    id="location-1"
+                  />
+                  <label for="location-1">Số 68, Phường 12, Quận Gò Vấp, Thành phố Hồ Chí Minh</label>
+                </div>
+                <div class="delivery-method">
+                  <input
+                    type="radio"
+                    class="input-radio"
+                    name="chiNhanh"
+                    id="location-2"
+                  />
+                  <label for="location-2"
+                    >Số 123, Tỉnh lộ 01, Quận 12, Thành phố Hồ Chí Minh</label
+                  >
+                </div>
+                <div class="delivery-method">
+                  <input
+                    type="radio"
+                    class="input-radio"
+                    name="chiNhanh"
+                    id="location-3"
+                  />
+                  <label for="location-3"
+                    >Số 157, Xa lộ Hà Nội , Thành phố Thủ Đức, Thành phố Hồ Chí
+                    Minh</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div>Phương thức thanh toán</div>
+              <div class="delivery-method pay-method">
+                <input
+                  type="radio"
+                  class="input-radio"
+                  name="pay-method"
+                  id="money-transfer"
+                />
+                <label for="money-transfer">Chuyển khoản qua ngân hàng</label>
+              </div>
+              <div class="delivery-method pay-method">
+                <input
+                  type="radio"
+                  class="input-radio"
+                  name="pay-method"
+                  id="money-payDown"
+                />
+                <label for="money-payDown">Tiền mặt</label>
+              </div>
+            </div>
+            <div class="cart btn bg-btn clip-path-10">
+              <a href="./carts.html">Tới giỏ hàng</a>
+            </div>
+          </form>
+        </section>
+
+        <section class="container-payment">
+          <div class="payment-info">
+            <div class="image-quantily">
+              <img
+                src="https://phattien.com/wp-content/uploads/2021/10/cbr150r-den-xam.png"
+                alt="CBR150R"
+              />
+              <div class="payment-info__quantily" id="product_quantity">1</div>
+            </div>
+            <div >
+              <span id="product_name">Honda CBR150R</span>
+              <span id="product_info">Phiên Bản Đặt Biệt / Đen Xám</span>
+            </div>
+            <span class="price"></span>
+          </div>
+
+          <div class="voucher">
+            <input type="text" placeholder="Mã giảm giá" />
+            <button>Sử dụng</button>
+          </div>
+
+          <div class="info-details">
+            <div class="money">
+              <div>Tạm tính</div>
+              <span>73,290,000₫</span>
+            </div>
+            <div class="money">
+              <div>Phí ship</div>
+              <span id="delivery_fee">_</span>
+            </div>
+            <div class="money">
+              <div>Phương thức vận chuyển</div>
+              <span id="delivery_name">Giao hàng</span>
+            </div>
+            <div class="money">
+              <div>Phương thức thanh toán</div>
+              <span id="payment_name">_</span>
+            </div>
+          </div>
+
+          <div class="total">
+            <span>Tổng tiền</span>
+            <div class="number">VND <span>73,290,000</span>₫</div>
+          </div>
+          <button type="submit" class="order" onclick="sendMail()">Đặt hàng</button>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="custom-shape-divider-bottom-1685005946">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <article>
+        <div class="section contact">
+          <div class="container">
+            <div class="contact-brand">
+              <a href="#" class="logo">
+                <img
+                  src="./assets/images/logo.svg"
+                  width="150"
+                  height="73"
+                  loading="lazy"
+                  alt="Unigine logo"
+                />
+              </a>
+
+              <p class="footer-text">
+                Dự án của nhóm 3 đề tài thiết kế website tĩnh đại lý bán xe
+              </p>
+
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.insatgram.com/coding.stella"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Thành Viên</p>
+
+              <ul>
+                <li>
+                  <a href="#" class="contact-link">Cao Nhật Linh</a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-link">Trần Thị Trúc</a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-link">Bạch Minh Tuyên</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Contact Us</p>
+
+              <div class="contact-item">
+                <span class="span">Location:</span>
+
+                <address class="contact-link">
+                  140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh
+                </address>
+              </div>
+
+              <div class="contact-item">
+                <span class="span">Join Us:</span>
+
+                <a href="mailto:Info@gamehive.com" class="contact-link"
+                  >nhom3dailyxemay@gmail.com</a
+                >
+              </div>
+
+              <div class="contact-item">
+                <span class="span">Phone:</span>
+
+                <a href="tel:+12345678910" class="contact-link"
+                  >+84 123456789</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Join Us</p>
+
+              <form action="./index.html" method="get" class="contact-form">
+                <input
+                  type="email"
+                  name="email_address"
+                  required
+                  placeholder="Your Email"
+                  autocomplete="off"
+                  class="input-field"
+                />
+
+                <button type="submit" class="btn clip-path-3 bg-btn" data-btn>
+                  Subscribe Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+    </footer>
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+    <div class="cursor" data-cursor></div>
+    <!-- 
+    - ionicon link
+    -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./assets/js/base.js"></script>
+    <script src="./assets/js/payment.js"></script>
+    <!-- TODO: EmailJS-->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("YOUR_PUBLIC_KEY");
+      })();
+    </script>
+  </body>
+</html>
